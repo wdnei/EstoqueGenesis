@@ -1,0 +1,48 @@
+{
+  "name": "Caixa",
+  "plural": "Caixas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "qtd": {
+      "type": "number",
+      "required": true
+    },
+    "preco_unitario": {
+      "type": "number",
+      "required": true
+    },
+    "comentatio": {
+      "type": "string",
+      "required": true
+    },
+    "data_movimentacao": {
+      "type": "date",
+      "required": true
+    },
+    "data_adicao": {
+      "type": "date",
+      "required": true
+    },
+    "tipo": {
+      "type": "string",
+      "required": true,
+       "enum": ["compra", "venda"]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "funcionario": {
+      "type": "belongsTo",
+      "model": "Funcionario",
+      "foreignKey": ""
+    }
+
+
+  },
+  "acls": [],
+  "methods": []
+}

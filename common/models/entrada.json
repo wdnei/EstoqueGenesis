@@ -1,0 +1,40 @@
+{
+  "name": "Entrada",
+  "plural": "Entradas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "qtd": {
+      "type": "number",
+      "required": true
+    },
+    "preco_unitario": {
+      "type": "number",
+      "required": true
+    },
+    "data_adicao": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+
+    "caixa": {
+      "type": "belongsTo",
+      "model": "Caixa",
+      "foreignKey": ""
+    },
+    "estoque": {
+      "type": "hasOne",
+      "model": "Estoque",
+      "foreignKey": ""
+    }
+
+  },
+  "acls": [],
+  "methods": []
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Estoque",
+  "plural": "Estoques",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "qtd_inicial": {
+      "type": "number",
+      "required": true
+    },
+    "preco_unitario": {
+      "type": "number",
+      "required": true
+    },
+    "data_adicao": {
+      "type": "date",
+      "required": true
+    },
+    "qtd_atual": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

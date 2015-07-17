@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mySQL": {
+    "host": "127.0.0.1",
+    "port": 3307,
+    "url": "http://127.0.0.1:3307",
+    "database": "estoquegenesisdb",
+    "password": "usbw",
+    "name": "mySQL",
+    "connector": "mysql",
+    "user": "root"
+  }
+}
