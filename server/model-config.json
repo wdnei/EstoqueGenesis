@@ -14,42 +14,42 @@
     ]
   },
   "User": {
-    "dataSource": "mySQL"
+    "dataSource": "db"
   },
   "AccessToken": {
-    "dataSource": "mySQL",
+    "dataSource": "db",
     "public": false
   },
   "ACL": {
-    "dataSource": "mySQL",
+    "dataSource": "db",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "mySQL",
+    "dataSource": "db",
     "public": false
   },
   "Role": {
-    "dataSource": "mySQL",
+    "dataSource": "db",
     "public": false
   },
   "Funcionario": {
-    "dataSource": "mySQL",
+    "dataSource": "db",
     "public": true
   },
   "Caixa": {
-    "dataSource": "mySQL",
+    "dataSource": "db",
     "public": true
   },
   "Estoque": {
-    "dataSource": "mySQL",
+    "dataSource": "db",
     "public": true
   },
   "Entrada": {
-    "dataSource": "mySQL",
+    "dataSource": "db",
     "public": true
   },
   "Saida": {
-    "dataSource": "mySQL",
+    "dataSource": "db",
     "public": true
   }
 }

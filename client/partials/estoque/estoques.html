@@ -1,0 +1,27 @@
+
+<h3>Todos os Estoques</h3>
+<table class="table movietable">
+    <tr>
+
+        <th>ID</th>
+        <th>Data</th>
+        <th>Qtd Inicial</th>
+        <th>Qtd Atual</th>
+        <th>Preço</th>
+        <th></th>
+    </tr>
+    <tr ng-repeat="estoque in estoques">
+
+        <td>{{estoque.id}}</td>
+        <td>{{estoque.data_adicao}}</td>
+        <td>{{estoque.qtd_inicial}}</td>
+        <td>{{estoque.qtd_atual}}</td>
+        <td>{{estoque.preco_unitario}}</td>
+
+
+        <!-- <td>
+            <a class="btn btn-primary" ui-sref="viewCaixa({id:estoque.id})">View</a>
+            <a class="btn btn-danger"  ng-click="deleteCaixa(estoque.id)">Delete</a>
+        </td> -->
+    </tr>
+</table>

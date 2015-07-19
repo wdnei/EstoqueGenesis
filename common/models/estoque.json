@@ -25,7 +25,12 @@
     }
   },
   "validations": [],
-  "relations": {},
-  "acls": [],
-  "methods": []
-}
+  "relations": {
+    "caixa": {
+      "type": "belongsTo",
+      "model": "Caixa",
+      "foreignKey": ""
+      }},
+      "acls": [],
+      "methods": []
+    }

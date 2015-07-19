@@ -1,0 +1,43 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 1,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "Funcionario": 2,
+    "Caixa": 19,
+    "Estoque": 6,
+    "Entrada": 1,
+    "Saida": 20
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "Funcionario": {
+      "1": "{\"primeiro_nome\":\"Wdnei\",\"ultimo_nome\":\"Ribeiro\",\"cargo\":\"Estoquista\",\"password\":\"$2a$10$jmaHq9N5Nl3vbifC8LKTLuWTPT1K5MaU7fuqipz0XSoB6feJevvna\",\"email\":\"wdneipaixao@gmail.com\",\"id\":1}"
+    },
+    "Caixa": {
+      "11": "{\"qtd\":10,\"preco_unitario\":1.5,\"data_movimentacao\":\"2015-07-19T19:49:29.217Z\",\"data_adicao\":\"2015-07-19T19:49:29.217Z\",\"tipo\":\"compra\",\"metodo\":\"peps\",\"id\":11,\"funcionarioId\":1,\"comentatio\":\"\"}",
+      "12": "{\"qtd\":10,\"preco_unitario\":1.6,\"data_movimentacao\":\"2015-07-19T19:49:53.200Z\",\"data_adicao\":\"2015-07-19T19:49:53.200Z\",\"tipo\":\"compra\",\"metodo\":\"peps\",\"id\":12,\"funcionarioId\":1,\"comentatio\":\"\"}",
+      "13": "{\"qtd\":11,\"preco_unitario\":2,\"data_movimentacao\":\"2015-07-19T19:50:11.612Z\",\"data_adicao\":\"2015-07-19T19:50:11.612Z\",\"tipo\":\"venda\",\"metodo\":\"peps\",\"id\":13,\"funcionarioId\":1,\"comentatio\":\"\"}",
+      "14": "{\"qtd\":11,\"preco_unitario\":2,\"data_movimentacao\":\"2015-07-19T19:53:47.636Z\",\"data_adicao\":\"2015-07-19T19:53:47.636Z\",\"tipo\":\"venda\",\"metodo\":\"peps\",\"id\":14,\"funcionarioId\":1,\"comentatio\":\"\"}",
+      "15": "{\"qtd\":9,\"preco_unitario\":0,\"data_movimentacao\":\"2015-07-19T19:54:58.860Z\",\"data_adicao\":\"2015-07-19T19:54:58.860Z\",\"tipo\":\"venda\",\"metodo\":\"peps\",\"id\":15,\"funcionarioId\":1,\"comentatio\":\"\"}",
+      "16": "{\"qtd\":11,\"preco_unitario\":2,\"data_movimentacao\":\"2015-07-19T19:55:41.577Z\",\"data_adicao\":\"2015-07-19T19:55:41.577Z\",\"tipo\":\"venda\",\"metodo\":\"peps\",\"id\":16,\"funcionarioId\":1,\"comentatio\":\"\"}",
+      "17": "{\"qtd\":11,\"preco_unitario\":3,\"data_movimentacao\":\"2015-07-19T19:57:36.534Z\",\"data_adicao\":\"2015-07-19T19:57:36.534Z\",\"tipo\":\"venda\",\"metodo\":\"peps\",\"id\":17,\"funcionarioId\":1,\"comentatio\":\"\"}",
+      "18": "{\"qtd\":11,\"preco_unitario\":5,\"data_movimentacao\":\"2015-07-19T19:58:35.738Z\",\"data_adicao\":\"2015-07-19T19:58:35.738Z\",\"tipo\":\"venda\",\"metodo\":\"peps\",\"id\":18,\"funcionarioId\":1,\"comentatio\":\"\"}"
+    },
+    "Estoque": {
+      "4": "{\"qtd_inicial\":10,\"preco_unitario\":1.5,\"data_adicao\":\"2015-07-19T19:49:29.217Z\",\"qtd_atual\":0,\"id\":4,\"caixaId\":11}",
+      "5": "{\"qtd_inicial\":10,\"preco_unitario\":1.6,\"data_adicao\":\"2015-07-19T19:49:53.200Z\",\"qtd_atual\":9,\"id\":5,\"caixaId\":12}"
+    },
+    "Entrada": {},
+    "Saida": {
+      "18": "{\"qtd\":10,\"preco_unitario\":1.5,\"data_adicao\":\"2015-07-19T19:58:43.329Z\",\"id\":18,\"caixaId\":0,\"estoqueId\":4}",
+      "19": "{\"qtd\":1,\"preco_unitario\":1.6,\"data_adicao\":\"2015-07-19T19:58:43.329Z\",\"id\":19,\"caixaId\":18,\"estoqueId\":5}"
+    }
+  }
+}

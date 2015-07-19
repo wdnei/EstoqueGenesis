@@ -30,7 +30,7 @@
       "foreignKey": ""
     },
     "estoque": {
-      "type": "hasOne",
+      "type": "belongsTo",
       "model": "Estoque",
       "foreignKey": ""
     }

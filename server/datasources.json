@@ -1,7 +1,8 @@
 {
   "db": {
     "name": "db",
-    "connector": "memory"
+    "connector": "memory",
+    "file":"estoquegenesisdb.json"
   },
   "mySQL": {
     "host": "127.0.0.1",

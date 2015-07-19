@@ -15,9 +15,9 @@
       "type": "number",
       "required": true
     },
-    "comentatio": {
+    "comentario": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "data_movimentacao": {
       "type": "date",
@@ -31,6 +31,11 @@
       "type": "string",
       "required": true,
        "enum": ["compra", "venda"]
+    },
+    "metodo": {
+      "type": "string",
+      "required": true,
+       "enum": ["ueps", "peps"]
     }
   },
   "validations": [],
@@ -40,6 +45,7 @@
       "model": "Funcionario",
       "foreignKey": ""
     }
+
 
 
   },

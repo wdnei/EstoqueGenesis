@@ -27,11 +27,6 @@
       "type": "belongsTo",
       "model": "Caixa",
       "foreignKey": ""
-    },
-    "estoque": {
-      "type": "hasOne",
-      "model": "Estoque",
-      "foreignKey": ""
     }
 
   },
