@@ -14,4 +14,14 @@
     "connector": "mysql",
     "user": "root"
   }
+  ,
+  "sqlite": {
+    "test": {
+      "file_name": "test.sqlite3",
+      "debug": true
+    },
+    "name": "sqlite",
+    "connector": "sqlite"
+
+  }
 }

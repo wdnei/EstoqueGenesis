@@ -56,7 +56,7 @@ angular.module('app.controllers.Caixa',[]).controller('CaixaListController',func
 
 
 
-      }).controller('CaixaCreateController',function($scope,$state,$stateParams,Caixa,Entrada,Saida,Estoque,Funcionario){
+      }).controller('CaixaCreateController',function($scope,$state,$stateParams,Setting,Caixa,Entrada,Saida,Estoque,Funcionario){
 
 
 
@@ -67,7 +67,7 @@ angular.module('app.controllers.Caixa',[]).controller('CaixaListController',func
           "data_movimentacao": new Date(),
           "data_adicao": new Date(),
           "tipo": "venda",
-          "metodo": "peps",
+          "metodo": Setting.metodo,
           "id": 0,
           "funcionarioId": 0
         }
@@ -224,7 +224,7 @@ angular.module('app.controllers.Caixa',[]).controller('CaixaListController',func
 
       $scope.addCompra=function(){
         console.log("Adicionando compra");
-
+        $scope.caixa.tipo="compra";
         //salvar caixa e estoque
         Caixa.create($scope.caixa,function(res){
           //success

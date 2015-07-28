@@ -77,4 +77,6 @@ angular.module('app').config(function($stateProvider,$httpProvider){
 
 .constant("APIlb", {
         "url": "http://localhost:3000/api"
-    });
+    }).constant("Setting", {
+            "metodo": "peps"
+        });
