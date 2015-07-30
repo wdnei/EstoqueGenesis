@@ -2,7 +2,7 @@ angular.module('app.controllers.Caixa',[]).controller('CaixaListController',func
 
 
 
-  Caixa.find(
+  Caixa.find({"filter":{"order": "data_adicao DESC"}},
     function (res) {
       // success
 
@@ -56,7 +56,7 @@ angular.module('app.controllers.Caixa',[]).controller('CaixaListController',func
 
 
 
-      }).controller('CaixaCreateController',function($scope,$state,$stateParams,Setting,Caixa,Entrada,Saida,Estoque,Funcionario){
+      }).controller('CaixaCreateController',function($scope,$state,$window,$stateParams,Setting,Caixa,Entrada,Saida,Estoque,Funcionario){
 
 
 
@@ -208,6 +208,8 @@ angular.module('app.controllers.Caixa',[]).controller('CaixaListController',func
 
               }
               console.log("Estoque alterados");
+              $window.alert("Venda Adicionada com sucesso!");
+              $state.go('caixas');
             });
           }
           else {
@@ -242,7 +244,8 @@ angular.module('app.controllers.Caixa',[]).controller('CaixaListController',func
             //success
 
             console.log("estoque criado",res);
-
+            $window.alert("Compra adicionada com sucesso!");
+            $state.go('caixas');
           },function(err){
             //err
             throw err;
@@ -257,7 +260,7 @@ angular.module('app.controllers.Caixa',[]).controller('CaixaListController',func
       };
 
 
-    }).controller('CaixaEditController',function($scope,$state,$stateParams,Caixa){
+    }).controller('CaixaEditController',function($scope,$state,$window,$stateParams,Caixa){
 
       $scope.updateCaixa=function(){
         Caixa.upsert($scope.caixa,function (res) {

@@ -8,7 +8,7 @@ angular.module('app.controllers.Saida',[]).controller('SaidaListController',func
 
       console.log(res);
       $scope.saidas=res;
-      
+
 
     }, function (res) {
       // error

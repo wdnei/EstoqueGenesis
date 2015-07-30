@@ -15,7 +15,7 @@
   <tr ng-repeat="estoque in estoques">
 
     <td>{{estoque.id}}</td>
-    <td>{{estoque.data_adicao}}</td>
+    <td>{{estoque.data_adicao| date:"dd/MM/yyyy 'as' h:mma"}}</td>
     <td>{{estoque.qtd_inicial}}</td>
     <td>{{estoque.qtd_atual}}</td>
     <td>{{estoque.preco_unitario}}</td>

@@ -12,7 +12,7 @@
     <tr ng-repeat="caixa in caixas">
 
         <td>{{caixa.tipo}}</td>
-        <td>{{caixa.data_adicao}}</td>
+        <td>{{caixa.data_adicao| date:"dd/MM/yyyy 'as' h:mma"}}</td>
         <td>{{caixa.qtd}}</td>
         <td>{{caixa.preco_unitario}}</td>
 

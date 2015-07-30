@@ -11,7 +11,7 @@
     </tr>
     <tr ng-repeat="saida in saidas">
 
-        <td>{{saida.data_adicao}}</td>
+        <td>{{saida.data_adicao| date:"dd/MM/yyyy 'as' h:mma"}}</td>
         <td>{{saida.qtd}}</td>
         <td>{{saida.preco_unitario}}</td>
         <td>{{saida.estoqueId}}</td>

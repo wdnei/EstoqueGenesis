@@ -4,11 +4,11 @@
   <div class="form-group">
     <label for="qtd" class="col-sm-2 control-label">Data Inicial</label>
     <div class="col-sm-10">
-      <input type="date"  placeholder="dd-MM-yyyy" min="01-01-1990" min="01-01-2050" ng-model="data_inicial" class="form-control" id="qtd" />
+      <input type="date" date-fix  placeholder="yyyy-MM-dd"  ng-model="search.data_inicial" class="form-control" name="data_inicial" />
     </div>
     <label for="qtd" class="col-sm-2 control-label">Data Final</label>
     <div class="col-sm-10">
-      <input type="date" placeholder="dd-MM-yyyy" min="01-01-1990" min="01-01-2050" ng-model="data_final" class="form-control" id="qtd" />
+      <input type="date" date-fix placeholder="yyyy-MM-dd"  ng-model="search.data_final" class="form-control" name="data_final" />
     </div>
   </div>
   <button type="button" ng-click="gerarDRE()">Gerar</button>

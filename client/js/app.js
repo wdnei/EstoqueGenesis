@@ -2,6 +2,7 @@
  * Created by Sandeep on 01/06/14.
  */
 
+
 angular.module('app',['ui.router',
                       'ngResource',
                       'app.controllers.Caixa',
@@ -79,4 +80,16 @@ angular.module('app').config(function($stateProvider,$httpProvider){
         "url": "http://localhost:3000/api"
     }).constant("Setting", {
             "metodo": "peps"
+        }).directive('dateFix', function() {
+            return {
+                restrict: 'A',
+                require: 'ngModel',
+                link: function (scope, element, attr, ngModel) {
+                    element.on('change', function() {
+                        scope.$apply(function () {
+                            ngModel.$setViewValue(element.val());
+                        });
+                    });
+                }
+            };
         });

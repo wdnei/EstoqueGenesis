@@ -59,7 +59,7 @@ angular.module('app.controllers.Funcionario',[]).controller('FuncionarioListCont
 
 
 
-      }).controller('FuncionarioCreateController',function($scope,$state,$stateParams,Funcionario){
+      }).controller('FuncionarioCreateController',function($scope,$window,$state,$stateParams,Funcionario){
 
         $scope.funcionario={
           primeiro_nome:"",
@@ -80,6 +80,7 @@ angular.module('app.controllers.Funcionario',[]).controller('FuncionarioListCont
             // success
 
             console.log(res);
+            $window.alert("Funcionario adicionado com sucesso!");
             $state.go('funcionarios');
 
           }, function (res) {
@@ -90,7 +91,7 @@ angular.module('app.controllers.Funcionario',[]).controller('FuncionarioListCont
           });
         };
 
-      }).controller('FuncionarioEditController',function($scope,$state,$stateParams,Funcionario){
+      }).controller('FuncionarioEditController',function($scope,$state,$window,$stateParams,Funcionario){
 
         $scope.updateFuncionario=function(){
           Funcionario.upsert($scope.funcionario,function (res) {
@@ -98,6 +99,8 @@ angular.module('app.controllers.Funcionario',[]).controller('FuncionarioListCont
             // success
 
             console.log(res);
+            $window.alert("Funcionario alterado com sucesso!");
+
             $state.go('funcionarios');
 
           }, function (res) {
